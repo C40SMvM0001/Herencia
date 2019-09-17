@@ -1,0 +1,2 @@
+# Herencia
+Practica de herencia
