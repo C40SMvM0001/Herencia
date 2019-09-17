@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace Persona
 {
-    class Cliente : Persona
+    public class Cliente : Persona
     {
-        private int codEmp;
-        private string Direccion;
+        public string Nit;
+        public string Procedencia;
+
+        public void MostrarCliente(string Ci, string Nombre, string Apellido, string Nit, string Procedencia) {
+            this.Ci = Ci ;
+            this.Nombre = Nombre;
+            this.Apellido = Apellido;
+            this.Nit =Nit;
+            this.Procedencia = Procedencia;
+        }
+        
     }
 }

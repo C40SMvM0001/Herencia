@@ -6,12 +6,49 @@ using System.Threading.Tasks;
 
 namespace Persona
 {
-    class Persona
+    public class Persona
     {
-        protected int Ci;
-        protected string Apellido;
-        protected string Nombre;
+        protected string ci;
+        protected string apellido;
+        protected string nombre;
 
+        protected string Ci
+        {
+            get
+            {
+                return ci;
+            }
 
+            set
+            {
+                ci = value;
+            }
+        }
+
+        protected string Apellido
+        {
+            get
+            {
+                return apellido;
+            }
+
+            set
+            {
+                apellido = value;
+            }
+        }
+
+        protected string Nombre
+        {
+            get
+            {
+                return nombre;
+            }
+
+            set
+            {
+                nombre = value;
+            }
+        }
     }
 }

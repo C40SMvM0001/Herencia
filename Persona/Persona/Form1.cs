@@ -16,5 +16,42 @@ namespace Persona
         {
             InitializeComponent();
         }
+
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            if (txtCiCliente.Text != "" && txtNombreCliente.Text != "" && txtApellidoCliente.Text != "" && txtNitCliente.Text != "" && txtProcedenciaCliente.Text != "")
+            {
+                cliente.MostrarCliente(txtCiCliente.Text,
+                                       txtNombreCliente.Text,
+                                       txtApellidoCliente.Text,
+                                       txtNitCliente.Text,
+                                       txtProcedenciaCliente.Text);
+                MessageBox.Show("Bien", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            else
+            {
+                MessageBox.Show("Faltan Datos", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnAgregarEncargado_Click(object sender, EventArgs e)
+        {
+            EncargadoDeAlmacen cliente = new EncargadoDeAlmacen();
+            if (txtCiEncargado.Text != "" && txtNombreEncargado.Text != "" && txtApellidoEncargado.Text != "" && txtCodEncarado.Text != "" && txtDireccionEncargado.Text != "")
+            {
+                cliente.MostrarEncargado(txtCiEncargado.Text,
+                                         txtNombreEncargado.Text,
+                                         txtApellidoEncargado.Text,
+                                         txtCodEncarado.Text,
+                                         txtDireccionEncargado.Text);
+                MessageBox.Show("Bien", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Faltan Datos", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
