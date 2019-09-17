@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Persona
 {
-    class Cliente
+    class Cliente : Persona
     {
+        private int codEmp;
+        private string Direccion;
     }
 }

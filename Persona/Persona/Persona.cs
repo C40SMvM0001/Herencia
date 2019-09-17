@@ -8,5 +8,10 @@ namespace Persona
 {
     class Persona
     {
+        protected int Ci;
+        protected string Apellido;
+        protected string Nombre;
+
+
     }
 }

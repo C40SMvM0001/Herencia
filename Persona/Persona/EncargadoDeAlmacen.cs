@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Persona
 {
-    class EncargadoDeAlmacen
+    class EncargadoDeAlmacen : Persona
     {
+        private int Nit;
+        private string Procedencia;
     }
 }
